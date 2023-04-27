@@ -64,7 +64,9 @@ export function Guess({
         return (
           <div
             key={i}
-            className={`relative w-9 md:w-14 h-9 md:h-14 m-0.5 md:m-1 ${
+            className={`relative ${wordLength > 6 ? "w-9" : "w-12"} md:w-14 ${
+              wordLength > 6 ? "h-9" : "h-12"
+            } md:h-14 m-0.5 md:m-1 ${
               wasGuessMade ? "flip" : !!letter ? "pump" : ""
             }`}
             style={{

@@ -88,7 +88,7 @@ function Key({
 
   return (
     <button
-      className={`w-7 md:w-11 h-14 m-0.5 md:m-1 rounded-md font-bold uppercase ${
+      className={`w-8 md:w-11 h-14 m-0.5 md:m-1 rounded-md font-bold uppercase ${
         isCorrect
           ? "bg-green"
           : isInWord
